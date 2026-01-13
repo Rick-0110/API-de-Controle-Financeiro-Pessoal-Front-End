@@ -43,3 +43,72 @@ button {
 button:hover {
     background-color: #218838;
 }
+
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.summary-cards {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.card.summary {
+    flex: 1;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.summary.income h3 { color: #28a745; }
+.summary.expense h3 { color: #dc3545; }
+.summary.total h3 { color: #007bff; }
+
+.summary p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th, table td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f8f9fa;
+}
+
+.btn-new {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}

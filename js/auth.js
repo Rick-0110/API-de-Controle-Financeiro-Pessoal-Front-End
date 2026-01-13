@@ -27,11 +27,16 @@ if(loginForm){
 
         
             if (response.ok) {
-                const data = await response.text(); 
-                
-                localStorage.setItem('token', data);
-                
-                window.location.href = 'dashboard.html';
+
+        const data = await response.json(); 
+        
+        const tokenLimpo = data.token; 
+
+        console.log("Token puro salvo:", tokenLimpo);
+        
+        localStorage.setItem('token', tokenLimpo);  
+        
+        window.location.href = 'dashboard.html';
             } else {
                 errorMessage.textContent = "Email ou senha inválidos!";
                 errorMessage.style.display = 'block';
